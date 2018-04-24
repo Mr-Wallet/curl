@@ -188,6 +188,7 @@ before_script:
           cd wolfssl-3.14.0-stable && \
           ./autogen.sh && \
           ./configure && \
+          touch wolfssl/wolfcrypt/fips.h && \
           make)
         fi
       fi
